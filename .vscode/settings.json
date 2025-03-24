@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/Python_Code/.venv/bin/python",
+  "java.project.sourcePaths": [
+      "Java_Code/src"
+  ],
+  "java.project.referencedLibraries": [
+      "Java_Code/lib/**/*.jar"
+  ]
+}
