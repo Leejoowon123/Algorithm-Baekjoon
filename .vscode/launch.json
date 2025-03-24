@@ -1,21 +1,28 @@
 {
   "version": "0.2.0",
   "configurations": [
-      {
-          "type": "java",
-          "name": "Launch App",
-          "request": "launch",
-          "mainClass": "App",
-          "cwd": "${workspaceFolder}/Java_Code/src",
-          "console": "integratedTerminal"
-      },
-      {
-          "name": "Python: python.py",
-          "type": "python",
-          "request": "launch",
-          "program": "${workspaceFolder}/Python_Code/python.py",
-          "console": "integratedTerminal",
-          "justMyCode": true
-      }
-  ]
+    {
+        "type": "java",
+        "name": "Main",
+        "request": "launch",
+        "mainClass": "Main",
+        "projectName": "Algorithm-Baekjoon_5ececed9"
+    },
+    {
+        "type": "java",
+        "name": "Launch App",
+        "request": "launch",
+        "mainClass": "Main",
+        "cwd": "${workspaceFolder}/Java_Code/src",
+        "console": "integratedTerminal"
+    },
+    {
+        "name": "Python: python.py",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/Python_Code/python.py",
+        "console": "integratedTerminal",
+        "justMyCode": true
+    }
+]
 }
