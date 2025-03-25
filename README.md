@@ -43,12 +43,14 @@ public class Main {
 
 #### 기본
 1. [Stack](./Java_Code/src/Algorithm_data_structure/md_file/Stack.md)
-2. Queue
-3. PriorityQueue, 완전 탐색
-4. Deque(중요)
-5. Hashmap
-6. String 문자열 활용
-7. Union-Find
+2. [Tree](./Java_Code/src/Algorithm_data_structure/md_file/Tree.md)
+3. [Trie](./Java_Code/src/Algorithm_data_structure/md_file/Trie.md)
+4. [Queue&Heap](./Java_Code/src/Algorithm_data_structure/md_file/Queue_Heap.md)
+5. [PriorityQueue,완전탐색]
+6. [**Deque(중요)**]
+7. [Hashmap]
+8. [String문자열활용]
+9. [Union-Find]
 
 #### 중급
 1. BinarySearch
