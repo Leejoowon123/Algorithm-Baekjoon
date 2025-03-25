@@ -1,4 +1,4 @@
-package Algorithm_stack;
+package Algorithm_data_structure;
 
 public class Main_28278{
 
