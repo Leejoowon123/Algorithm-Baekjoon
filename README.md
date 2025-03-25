@@ -42,7 +42,7 @@ public class Main {
 자료구조 -> 알고리즘 -> 빡구현
 
 #### 기본
-1. [Stack](./Java_Code/src/Algorithm_stack/README.md)
+1. [Stack](./Java_Code/src/Algorithm_data_structure/md_file/Stack.md)
 2. Queue
 3. PriorityQueue, 완전 탐색
 4. Deque(중요)
