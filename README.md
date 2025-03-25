@@ -45,19 +45,19 @@ public class Main {
 1. [Stack](./Java_Code/src/Algorithm_data_structure/md_file/Stack.md)
 2. [Tree](./Java_Code/src/Algorithm_data_structure/md_file/Tree.md)
 3. [Trie](./Java_Code/src/Algorithm_data_structure/md_file/Trie.md)
-4. [Queue&Heap](./Java_Code/src/Algorithm_data_structure/md_file/Queue_Heap.md)
-5. [PriorityQueue,완전탐색]
-6. [**Deque(중요)**]
-7. [Hashmap]
-8. [String문자열활용]
-9. [Union-Find]
+4. [Heap](./Java_Code/src/Algorithm_data_structure/md_file/Heap.md)
+5. [Queue](./Java_Code/src/Algorithm_data_structure/md_file/Queue.md)
+5. [PriorityQueue,완전탐색](./Java_Code/src/Algorithm_data_structure/md_file/PriorityQueue.md)
+6. [**Deque(중요)**](./Java_Code/src/Algorithm_data_structure/md_file/Deque.md)
+7. [Hashmap](./Java_Code/src/Algorithm_data_structure/md_file/Hashmap.md)
+8. [String문자열활용](./Java_Code/src/Algorithm_data_structure/md_file/String.md)
 
 #### 중급
-1. BinarySearch
-2. DFS
-3. BFS
-4. Recursion
+1. [BinarySearch](./Java_Code/src/Algorithm_data_structure/md_file/BinarySearch.md)
+2. [DFS](./Java_Code/src/Algorithm_data_structure/md_file/DFS.md)
+3. [BFS](./Java_Code/src/Algorithm_data_structure/md_file/BFS.md)
+4. [Recursion](./Java_Code/src/Algorithm_data_structure/md_file/Recursion.md)
 
 #### 심화
-1. Graph
-2. DP(Dynamic Programming)
+1. [Graph](./Java_Code/src/Algorithm_data_structure/md_file/Graph.md)
+2. [DP(Dynamic_Programming)](./Java_Code/src/Algorithm_data_structure/md_file/DP.md)
