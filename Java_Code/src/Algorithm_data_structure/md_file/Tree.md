@@ -441,4 +441,181 @@ private List<T> preorderTree(Node node, List<T> visited){
     return visited;
 }
 ```
+
+- **중위 탐색 - inOrder()**
+**순서**
+1. 왼쪽 서브 트리 preorder
+2. 노드 방문
+3. 오른쪽 서브 트리 preorder
+
+```java
+public List<T> inOrder() {
+    return this.inorderTree(this.root, new ArrayList<>());
+}
+
+private List<T> inoderTree(Node node, List<T> visited) {
+    if(node == null) return visited;
+
+    inorderTree(node.left, visted);
+    visited.add(node.data);
+    inorderTree(node.right, visited);
+
+    return visited;
+}
+```
+
+- **후위 탐색 - postOrder()**
+**순서**
+1. 왼쪽 서브 트리 preorder
+2. 오른쪽 서브 트리 preorder
+3. 노드 방문
+
+```java
+public List<T> postOrder() {
+    return this.postorderTree(this.root, new ArrayList<>());
+}
+
+private List<T> postoderTree(Node node, List<T> visited) {
+    if(node == null) return visited;
+
+    postorderTree(node.left, visted);
+    postorderTree(node.right, visited);
+    visited.add(node.data);
+
+    return visited;
+}
+```
+
+- **contains(T val)**
+: 인자로 넘겨준 값이 존재하는지 판단하는 메소드
+    - 루트 노드부터 인자로 받아온 값과 비교하는 연산(compareTo())를 진행
+    - 일치하면 true 반환
+    - 그렇지 않으면?
+    - 찾고자 하는 값 < 현재 노드의 데이터 값 -> left 노드로 가서 재귀적으로 판단
+    - 찾고자 하는 값 > 현재 노드의 데이터 값 -> right 노드로 가서 재귀적으로 판단
+    - 현재 node가 null(leaf 노드에서 다음 노드를 타고 들어간 경우) 종료
+
+```java
+@Override
+public boolean contains(T val) {
+    return this.containsNode(this.root, val);
+}
+
+private boolean containsNode(Node node, T val) {
+    if (node == null) return false;
+
+    // a.compareTo(b)
+    // a < b : -1
+    // a == b : 0
+    // a > b : 1
+
+    //val == node.data
+    if (val.compareTo(node.data) == 0) { 
+        return true;
+    }
+
+    //val < node.data
+    if (val.compareTo(node.data) < 0) {
+        return containsNode(node.left, val);
+    }
+
+    //val > node.data
+    return containsNode(node.right, val);
+
+}
+```
+
+- **Insert(T val), insertNode(Node node, T val)**
+: 값 비교로 작다면 left노드, 크다면 right노드에 삽입
+
+**순서**
+1. 첫 시작 = root node
+2. node가 null인 경우 = 데이터 삽입 가능한 경우 
+    - So, val 데이터를 가진 노드 생성(노드 객체 생성)하여 리턴
+    - insert()메소드에서 다시 루트 노드로 대입
+    - 이 노드를 가지고 insertNode()메소드 호출
+3. 만약 자식 노드가 있다면 값을 비교
+    - 삽입하고자 하는 값 < root 값 -> left node
+    - 삽입하고자 하는 값 > root 값 -> right node
+
+```java
+@Override
+public void insert(T val) {
+    this.root = this.insertNode(this.root, val);
+    this.size++;
+}
+
+private Node insertNode(Node node, T val) {
+    if (node == null) {
+        return new Node(val);
+    }
+
+    // leaf노드 찾기
+    if (val.compareTo(node.data) < 0) {
+        node.left = insertNode(node.left, val);
+    } else if (val.compareTo(node.data) > 0) {
+        node.right = insertNode(node.right, val);
+    }
+
+    return node;
+}
+```
+
+- **delete(T val)**
+: 삭제하려고 하는 값의 위치를 찾기 위해 해당 값과 현재 노드의 데이터 값을 재귀 연산으로 비교하여 위치를 찾아감
+
+1. 삭제하고자 하는 값 < root 값 -> left node
+2. 삭제하고자 하는 값 > root 값 -> right node
+3. 위치를 찾은 경우(val == node.data)에는
+    - 삭제를 위해 size 1만큼 감소
+    - if 삭제하고자 하는 노드 = leaf 노드 -> null 리턴
+    - if 삭제하고자 하는 노드's 자식 노드가 1개
+        - leaf 노드는 비어있지 않으면서 right 노드가 빈 경우
+        - So, 해당 노드의 자식 노드를 리턴<br>
+    - if 삭제하고자 하는 노드의 자식 노드가 2개
+        - 오른쪽 서브 트리의 **최솟값**을 삭제할 노드의 위치로 가져오는 방법 사용
+        - 가져온 위치 노드는 삭제되어야 함 -> deleteNode 메소드를 재귀 호출
+        - 오른쪽 서브 트리에 값을 가져온 노드 데이터가 삭제된 서브 트리가 위치하도록 함<br>
+    - 삭제한 node 반환 & 함수 종료
+
+```java
+@Override
+
+public void delete(T val) {
+    this.deleteNode(this.root, val);
+}
+
+private Node deleteNode(Node node, T val) {
+    if (node == null) return null;
+
+    // 삭제할 노드 찾기
+    if (val.compareTo(node.data) < 0) {
+        node.left = deleteNode(node.left, val);
+    } else if(val.compareTo(node.data) > 0) {
+        node.right = deleteNode(node right, val);
+    } else { // val == node.data : 삭제할 노드를 찾은 경우    
+        this.size--;
+        if (node.left == null) { // 삭제할 노드가 leaf 노드인 경우
+            return node.right;
+        } else if (node.right == null) {
+            return node.left
+          }
+
+        node.data = this.minNode(node.right); // successor 노드 찾기
+        node.right = deleteNode(node.right, node.data);
+        // successor노드와 삭제 노드를 바꾸고 삭제
+      }
+    return node;
+}
+```
+
+- **size()**
+: size라는 멤버 변수를 만들어 놓았기 때문에 간단히 변수 리턴만
+
+```java
+@Override
+public int size(){
+    return this.size;
+}
+```
 </details>
