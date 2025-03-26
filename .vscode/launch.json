@@ -3,6 +3,34 @@
   "configurations": [
     {
         "type": "java",
+        "name": "Main_6198",
+        "request": "launch",
+        "mainClass": "Stack_data_structure.Main_6198",
+        "projectName": "Algorithm-Baekjoon_5ececed9"
+    },
+    {
+        "type": "java",
+        "name": "Main_17608",
+        "request": "launch",
+        "mainClass": "Stack_data_structure.Main_17608",
+        "projectName": "Algorithm-Baekjoon_5ececed9"
+    },
+    {
+        "type": "java",
+        "name": "Main_10799",
+        "request": "launch",
+        "mainClass": "Stack_data_structure.Main_10799",
+        "projectName": "Algorithm-Baekjoon_5ececed9"
+    },
+    {
+        "type": "java",
+        "name": "Main_10799",
+        "request": "launch",
+        "mainClass": "Main_10799",
+        "projectName": "Algorithm-Baekjoon_5ececed9"
+    },
+    {
+        "type": "java",
         "name": "Main_28278",
         "request": "launch",
         "mainClass": "Algorithm_stack.Main_28278",

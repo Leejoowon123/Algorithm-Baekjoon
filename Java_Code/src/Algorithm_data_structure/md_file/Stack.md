@@ -7,7 +7,7 @@
 ```
 |            Stack            |              Stack 상속 구조                |
 |:---------------------------:|:------------------------------------------:|
-![Stack](./img/java_stack.png)|![stack 상속](./img/java_stack_extention.png)|
+![Stack](../img/java_stack.png)|![stack 상속](../img/java_stack_extention.png)|
 
 ## Stack 사용처?
 - 총기류 탄창: 마지막에 넣은 총알이 가장 먼저 발사
@@ -77,3 +77,9 @@ System.out.println(stackInt.search(1)); // 1 출력(처음 꺼내지는 것)
 System.out.println(stackInt.search(4)); // -1 출력
 
 ```
+
+## 백준 문제
+
+1. 17608번 [막대기](https://www.acmicpc.net/problem/17608)[코드](../../Stack_data_structure/Main_17608.java)
+2. 10799번 [쇠막대기](https://www.acmicpc.net/problem/10799) [코드](../../Stack_data_structure/Main_10799.java)
+2. 6198번  [옥상 정원 꾸미기](https://www.acmicpc.net/problem/6198) [코드](../../Stack_data_structure/Main_6198.java)
