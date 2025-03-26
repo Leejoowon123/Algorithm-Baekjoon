@@ -29,6 +29,7 @@ public class Main {
         
         br.close();
         bw.flush();
+        bw.close();
     }
 
     public static void main(String[] args) throws Exception {
