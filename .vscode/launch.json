@@ -3,6 +3,20 @@
   "configurations": [
     {
         "type": "java",
+        "name": "Main_11279",
+        "request": "launch",
+        "mainClass": "Heap_data_structure.Main_11279",
+        "projectName": "Algorithm-Baekjoon_5ececed9"
+    },
+    {
+        "type": "java",
+        "name": "Main_1927",
+        "request": "launch",
+        "mainClass": "Heap_data_structure.Main_1927",
+        "projectName": "Algorithm-Baekjoon_5ececed9"
+    },
+    {
+        "type": "java",
         "name": "Main_6198",
         "request": "launch",
         "mainClass": "Stack_data_structure.Main_6198",
