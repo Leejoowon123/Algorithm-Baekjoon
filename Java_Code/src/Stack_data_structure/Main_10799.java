@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Stack;
 
+// 쇠막대기
 public class Main_10799{
 
     public void solution()throws Exception{

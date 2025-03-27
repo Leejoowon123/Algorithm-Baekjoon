@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Stack;
 
+// 막대기
 public class Main_17608 {
     
     public void solution()throws IOException{

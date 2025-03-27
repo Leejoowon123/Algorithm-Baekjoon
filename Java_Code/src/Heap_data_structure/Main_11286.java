@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 import java.util.Comparator;
 
+// 절댓값 힙 문제
 public class Main_11286 {
     
     public void solution()throws Exception{
