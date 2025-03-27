@@ -287,5 +287,5 @@ public int size() {
 ## 백준 문제
 ※ <U>힙이라고 적혀있지만 모두 Priority Queue를 사용</U>
 1. 1927번 [최소힙](https://www.acmicpc.net/problem/1927) [코드](../../Heap_data_structure/Main_1927.java)
-2. 11279번 [최소힙](https://www.acmicpc.net/problem/11279) [코드](../../Heap_data_structure/Main_11279.java)
+2. 11279번 [최대힙](https://www.acmicpc.net/problem/11279) [코드](../../Heap_data_structure/Main_11279.java)
 3. 11286번 [절댓값 힙](https://www.acmicpc.net/problem/11286) [코드](../../Heap_data_structure/Main_11286.java)

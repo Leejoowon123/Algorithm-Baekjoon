@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 
+// 최소힙 문제
 public class Main_1927 {
     
     public void solution() throws IOException{

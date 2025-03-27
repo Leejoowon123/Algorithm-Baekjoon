@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Stack;
 
+// 옥상 정원 꾸미기
 public class Main_6198 {
     
     public static long sum;

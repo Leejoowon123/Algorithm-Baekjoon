@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
+// 최대힙 문제
 public class Main_11279 {
     
     // Collections.reverseOrder()를 입력하여 역정렬

@@ -48,7 +48,7 @@ public class Main {
 3. [Trie](./Java_Code/src/Algorithm_data_structure/md_file/Trie.md)
 4. [Heap](./Java_Code/src/Algorithm_data_structure/md_file/Heap.md)
 5. [Queue](./Java_Code/src/Algorithm_data_structure/md_file/Queue.md)
-5. [PriorityQueue,완전탐색](./Java_Code/src/Algorithm_data_structure/md_file/PriorityQueue.md)
+5. [PriorityQueue,Brute Force(완전탐색)](./Java_Code/src/Algorithm_data_structure/md_file/PriorityQueue.md)
 6. [**Deque(중요)**](./Java_Code/src/Algorithm_data_structure/md_file/Deque.md)
 7. [Hashmap](./Java_Code/src/Algorithm_data_structure/md_file/Hashmap.md)
 8. [String문자열활용](./Java_Code/src/Algorithm_data_structure/md_file/String.md)
